@@ -4,4 +4,4 @@ COPY ./package.json .
 RUN npm install
 COPY . .
 ENV PATH=$PATH:/app/node_modules/.bin
-CMD [ "nodemon", "src/app.js" ]
+CMD [ "nodemon", "-L", "src/app.js" ]
